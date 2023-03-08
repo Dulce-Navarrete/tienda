@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false}));
 
 
 //rutas
-// app.use(indexRoutes);
+//app.use(indexRoutes);
 
 //archivos estaticos
 app.use(express.static(path.join(__dirname, "frontend")));
