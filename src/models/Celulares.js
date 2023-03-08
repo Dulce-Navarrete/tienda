@@ -5,7 +5,6 @@ const celularEsquema = new Schema(
         clave: {
             type: String,
             required: true,
-            unique: true,
             trim: true,
         },
         marca: {
@@ -17,19 +16,24 @@ const celularEsquema = new Schema(
             required: true,
         },
         fechaLanzamiento: {
-            type: String,
+            type: Date,
             required: true,
+            
         },
         RAM: {
-            type: Boolean,
-            default: false,
+            type: String,
+            required: true,
         },
         almacenamiento: {
             type: String,
             required: true,
         },
         cantCamaras: {
-            type: Number,
+            type: String,
+            required: true,
+        },
+        opcion: {
+            type: Boolean,
             default: false,
         },
 
